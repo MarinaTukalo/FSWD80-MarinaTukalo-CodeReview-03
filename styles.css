@@ -1,0 +1,190 @@
+/* Reset */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	max-width: 1200px;
+	margin: 0 auto;
+	font: 400 15px/24px'Droid Sans', Helvetica, Arial, sans-serif;
+	color:  #2c3133;
+}
+
+/*------- Header ------------ */
+/* ---- Logo ---- */
+
+header {
+	width: 100%;
+}
+
+.logo {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 30px;
+	background: #fff3f2;
+}
+
+/* ---- Navigation ---- */
+.navbar {
+	display: flex;
+	justify-content: flex-start;
+	background: #8e1617;
+}
+
+.nav {
+    padding: 5px 10px 15px 20px;
+    display: inline;
+}
+
+.nav li{
+	display:  inline-block;
+	font-size: 16px;
+	padding: 10px 20px 0 10px;
+}
+
+.nav li a{
+	color: #f4f3ef;  
+	text-decoration: none;
+}
+
+/*---Main Content-----*/
+
+h1 {
+	color: #deddd8;
+	width: 100%;
+	margin: 5px 0 10px 10px;
+}
+
+main {
+	background-color: #d0d0d0;
+}
+.main_content {
+	padding: 15px;
+	background-image: url('img/traffic-332857_1920.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover; 
+}
+
+		/* ---------- Form style starts here--------*/
+.input_form {
+	width: 60%;
+	background-color: #eaeaea;
+	opacity: 0.9 /* transparency*/;
+	text-align: center;
+	border: 2px solid #5b5a55;
+	margin: 0 auto;
+	padding: 15px;
+}
+
+form > input {
+	background-color: #fff;
+	font-size: 16px;
+	padding: 5px;
+	margin: 5px;
+}
+
+form > select {
+	background-color: #fff;
+	font-size: 16px;
+	padding: 5px;
+	margin: 5px;
+	width: 26%;
+}
+
+form > button {
+	background-color: #861a18;
+	padding: 5px;
+	color: white;
+	margin-bottom: 15px;
+}
+
+.test{
+	display: none;
+}
+/*#final_sum{
+	padding: 15px;
+	border: 2px solid red;
+	width: 25%;
+	margin: 0 auto;
+	font-size: 25px;
+}*/
+
+        /* ------- Form ends here --------*/
+
+main >h2, main >p {
+	text-align: center;
+	color: #2e2d29;
+	padding: 15px;
+}
+
+/*--------- Section starts here --------------------------------*/
+section {
+	padding: 15px;
+	margin: 15px;
+}
+
+.block {
+	display: flex;
+	justify-content: space-around;
+}
+
+.block_one, .block_two {
+	border: 1px solid #2e2d29;
+	width: 45%;
+	margin: 10px;
+	padding: 15px 15px 15px 35px;
+}
+
+h3 {
+	color: #344a7a;
+}
+
+/* ------------------- Footer starts here ------------------*/
+footer {
+	background: #000;
+	width: 100%;
+}
+
+.logo_footer{
+	display: flex;
+	flex-flow: row;
+	justify-content: flex-end;
+	padding-right: 20px;
+}
+
+h5 {
+	text-align: center;
+	color: #fff;
+	padding-bottom: 10px;
+}
+
+	/* -----------------Metanavigation --------------------*/
+.metanavbar {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.metanav {
+    padding: 5px 10px 15px 20px;
+    display: inline;
+}
+
+.metanav li{
+	display:  inline-block;
+	font-size: 14px;
+	padding: 10px 20px 0 10px;
+}
+
+.metanav li a{
+	color: #f4f3ef;  
+	text-decoration: none;
+}
+
+/* ------- Footer & Metanavigation end -------*/
