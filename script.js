@@ -1,5 +1,8 @@
+//Insurance Calculation //
+
 var country = ['Austria', 'Hungary', 'Greece'];
 
+var name = document.getElementById('custom_name').value;
 var horse_power = document.getElementById('power').value;
 var age = document.getElementById('age').value;
 

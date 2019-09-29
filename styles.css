@@ -188,3 +188,68 @@ h5 {
 }
 
 /* ------- Footer & Metanavigation end -------*/
+
+/* ------- Team member ---------*/
+.team_content {
+	padding: 15px;
+	background-image: url('img/team.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover; 
+}
+
+.team_content >h1 {
+	color: #e9e73a;
+}
+
+#member {
+	width: 60%;
+	background-color: #eaeaea;
+	opacity: 0.95 /* transparency*/;
+	text-align: center;
+	border: 2px solid #5b5a55;
+	margin: 0 auto;
+	padding: 15px;
+}
+
+
+/* ---- Media Quesries ------*/
+
+/* for tablets: */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+	body{
+		background: #dcccc6;
+	}
+
+	.logo div:nth-of-type(2){
+		display: none;
+	}
+
+	.block {
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+	}
+
+	.block_one, .block_two {
+		width: 75%;
+	}
+}
+
+/* for mobile phones: */
+@media screen and (max-width: 480px) {
+	.logo div:nth-of-type(2){
+		display: none;
+	}
+
+	.block {
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+	}
+
+	.block_one, .block_two {
+		width: 85%;
+	}
+}

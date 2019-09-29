@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Our team</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header>
+
+<!-- Logo -->
+		<div class="logo">
+			<div>
+				<a href="index.html"><img src="img/logo.png" alt="company_name" width="230px" height="50px">
+			</div>
+			<div>
+				<a href="https://www.codefactory.wien"><img src="img/banner.png" alt="banner" width="650px" height="70px"></a>
+			</div>
+		</div>
+
+<!-- Navigation -->
+
+		<div class="navbar">
+		 	<ul class="nav">
+				<li><a href="index.html">Home</a></li>
+    			<li><a href="team.html">Team</a></li>
+			</ul>
+		</div>
+			
+	</header>
+
+<!--- Main content starts here -------->
+	<main>
+		<div class="team_content">
+			<h1>Our team</h1>
+			<div id="member"></div>
+		</div>
+	</main>
+
+	<footer>
+		<!-- Metanavigation -->
+
+		<div class="metanavbar">
+		 	<ul class="metanav">
+				<li><a href="index.html">Home</a></li>
+    			<li><a href="#tech">Team</a></li>
+			</ul>
+		</div>
+
+		<div class="logo_footer">
+			<a href="index.html"><img src="img/logo-inv.png" alt="company_name" width="230px" height="50px"></a>
+		</div>
+
+		<h5>Marina Tukalo - CodeFactory 2019</h5> 
+	</footer>
+
+	<script src="data_team.json" type="text/javascript"></script>
+	<script>
+// -------- List of employee --------  //
+
+   	var output = '';
+   	for(var i = 0; i < teamMembers.length; i++) {
+   		output += " " + teamMembers[i].name + " <br>";
+        output += "Email Address: " + teamMembers[i].email + " <br>";
+         output += "<img width=50% src='" + teamMembers[i].image + "'><br><br>";
+    }
+ 	document.getElementById('member').innerHTML = output;
+	</script>
+</body>
+</html>
