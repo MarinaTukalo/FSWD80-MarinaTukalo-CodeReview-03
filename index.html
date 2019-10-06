@@ -38,37 +38,24 @@
 			<div class="input_form">
 				<h2>Great coverage begins with a custom quote</h2>
 				<br>
-				<form action="index_submit" method="get">
-					Your name:<br>
-  					<input id="custom_name" type="text" name="name" value="">
+				<form action="index_submit">
+					<p>Your name:</p>
+  					<input id="custom_name" type="text" name="name" value="" required>
+ 					<p>Car Age:</p>
+ 					<input id="age" name="age" value="" required>
+ 					<p>Horsepower of your car:</p>
+ 					<input id="power" name="car" value="" required>
+  					<p>Country: </p>
+  					<select id="country" type="text" name="country" value="" required>
+  							<option>Austria</option>
+  							<option>Hungary</option>
+		  					<option>Greece</option>
+		  			</select>
  					<br>
- 					Car Age:<br>
- 					<input id="age" name="age" value="">
-  					<br>
-  					
-  					<!---- I made select country unvisible ------>
-  					<div class="test">Country:<br>
-  						<select type="text" name="country" value="">
-  							<option id="input_one">Austria</option>
-  							<option id="input_two">Hungary</option>
-		  					<option id="input_two">Greece</option>
-		  				</select>
-		  			</div>
-		  			<!----- end unvisible ------>
-
- 					Horsepower of your car:<br>
- 					<input id="power" name="car" value="">
-  					<br>
-					Country:<br>
-					<input type="button" value="Austria" onclick=calculateInsurance1()>
-  					<input type="button" value="Hungary" onclick=calculateInsurance2()>
-  					<input type="button"  value="Greece" onclick=calculateInsurance3()>
-  					<br><br>
-  					<button type="reset" value="Reset">Reset</button>
+ 					<input type="button" value="Calculate" onclick=myFunction()>
+					
   					<h3>Printed calculation goes here</h3><br>
-  					<p id="final_sum_1"></p>
-  					<p id="final_sum_2"></p>
-  					<p id="final_sum_3"></p>
+  					<p id="final_sum"></p>
 				</form>
 			</div>
 <!-------- form ends here --------->

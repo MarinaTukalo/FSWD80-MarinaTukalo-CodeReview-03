@@ -104,16 +104,12 @@ form > button {
 	margin-bottom: 15px;
 }
 
-.test{
-	display: none;
-}
-/*#final_sum{
+#final_sum{
 	padding: 15px;
-	border: 2px solid red;
-	width: 25%;
+	width: 90%;
 	margin: 0 auto;
 	font-size: 25px;
-}*/
+}
 
         /* ------- Form ends here --------*/
 
